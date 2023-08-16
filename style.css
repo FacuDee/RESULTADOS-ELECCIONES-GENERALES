@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@700&family=Farro:wght@700&family=Lexend+Zetta&family=Montserrat:ital,wght@0,100;0,400;0,700;1,900&family=Passion+One&family=Russo+One&family=Share+Tech+Mono&family=Tilt+Warp&display=swap');
+
+body {
+    margin: 0;
+    background-color: #0a0a0a;
+}
+
+header {
+    position: relative;
+    width: 100% ;
+    height: 400px;
+    background-image: url(./imgs/sobre.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header h1 {
+    margin: 0;
+    padding: 20px;
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 72px;
+    font-family: 'Blinker', sans-serif;
+    color:#8ef82b;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+span {
+    font-size: 56px;
+    color: #ffffff;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.container {   
+    display: grid;
+    grid-template: 1fr 1fr 1fr;
+    gap: 3rem;
+}
+
+div.presidente,
+div.gobernador,
+div.intendente {
+    margin-bottom: 30px;
+    border: 5px solid #ffffff;
+    color: #ffffff;
+    font-size: 48px;
+    font-family: 'Russo One', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.boxCategory {
+    margin: 0 auto; /* Centra los elementos */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: auto;
+}
+
+.presidente,
+.gobernador,
+.intendente {
+    height: 100px;
+    margin: auto;
+    width: 50%;
+    border: 5px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Milei,
+#Bullrich,
+#Massa,
+#Schiaretti,
+#Bregman,
+#Kicillof,
+#Grindetti,
+#Piparo,
+#Sobrero,
+#Wesner,
+#Arouxet,
+#Galli,
+#Ripoll {
+    margin: auto;
+    width: 75%;
+    padding-right: 20px;
+    height: 100px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #ffffff;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.8);
+}
+
+.UxP {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(0,212,255,1) 25%, rgba(29,173,217,1) 100%);
+    color: white;
+}
+
+.JxC {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(234,244,4,1) 25%, rgba(233,242,17,1) 100%);
+    color: #f00c85;
+}
+
+.LLA {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(189,17,236,1) 50%, rgba(131,2,166,1) 100%);
+    color: #ffffff;
+}
+
+.FIT {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(244,4,37,1) 25%, rgba(208,3,31,1) 100%);
+    color: #ffffff;
+}
+
+.HxNP {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 20%, rgba(6,3,208,1) 100%);
+    color: #ffffff;
+}
+
+h4 {
+    margin: 0;
+    width: 180px;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+.JxC h4,
+.JxC p {
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.9);
+}
+
+p {
+    margin: 0;
+    font-size: 36px;
+    font-family: 'Russo One', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+h3 {
+    margin: 0;
+}
+
+.datos1 {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+footer {
+    margin-top: 10px;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #783C90;
+    color: white;
+    height: 150px;  
+}
+
+#logoFuente {
+    float: left; 
+    height: 75%; 
+    width: auto;
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 768px) {
+
+    header {
+        width: 100% !important;
+    }
+
+    header h1 {
+        font-size: 60px; /* Adjust font size for smaller screens */
+    }
+
+    span {
+        font-size: 40px;
+    }
+
+    .container {
+        grid-template-columns: 1fr; /* Single column layout on small screens */
+    }
+
+    .presidente,
+    .gobernador,
+    .intendente {
+        width: 60%;
+    }
+
+    #Milei,
+    #Bullrich,
+    #Massa,
+    #Schiaretti,
+    #Bregman,
+    #Kicillof,
+    #Grindetti,
+    #Piparo,
+    #Sobrero,
+    #Wesner,
+    #Arouxet,
+    #Galli,
+    #Ripoll { 
+        width: 80%;
+    }
+
+
+    .boxCategory {
+        margin-top: 10px; /* Smaller margin on small screens */
+        margin-bottom: 10px;
+    }
+
+    h4 {
+        font-size: 24px; /* Smaller font size for names */
+    }
+
+    h3 {
+        font-size: 48px;
+    }
+
+    p {
+        font-size: 30px; /* Smaller font size for percentages */
+    }
+
+    .datos1 {
+        padding-left: 10px;
+    }
+}
