@@ -185,6 +185,13 @@ footer {
     width: auto;
 }
 
+.franjaVerde {
+    margin: auto;
+    background-color: #8ef82b;
+    width: 50%;
+    height: 10px;
+}
+
 /* MEDIA QUERY */
 
 @media (max-width: 768px) {
