@@ -7,7 +7,7 @@ body {
 
 header {
     position: relative;
-    width: 100% ;
+    width: 100%;
     height: 400px;
     background-image: url(./imgs/sobre.jpg);
     background-repeat: no-repeat;
@@ -25,7 +25,7 @@ header h1 {
     transform: translate(-50%, -50%);
     font-size: 72px;
     font-family: 'Blinker', sans-serif;
-    color:#8ef82b;
+    color: #8ef82b;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
@@ -45,9 +45,10 @@ header::before {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-.container {   
+.container {
+    margin: 1rem;
     display: grid;
-    grid-template: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     gap: 3rem;
 }
 
@@ -63,10 +64,9 @@ div.intendente {
 }
 
 .boxCategory {
-    margin: 0 auto; /* Centra los elementos */
     margin-top: 20px;
     margin-bottom: 20px;
-    height: auto;
+
 }
 
 .presidente,
@@ -74,7 +74,7 @@ div.intendente {
 .intendente {
     height: 100px;
     margin: auto;
-    width: 50%;
+    width: 75%;
     border: 5px solid white;
     display: flex;
     justify-content: center;
@@ -94,53 +94,51 @@ div.intendente {
 #Arouxet,
 #Galli,
 #Ripoll {
-    margin: auto;
-    width: 75%;
-    padding-right: 20px;
+    margin: 0 0 1rem 0;
+    padding: 0px 10px;
     height: 100px;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
     border: 2px solid #ffffff;
     border-radius: 1rem;
-    margin-bottom: 1rem;
     box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.8);
 }
 
 .UxP {
-    background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(0,212,255,1) 25%, rgba(29,173,217,1) 100%);
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(0, 212, 255, 1) 25%, rgba(29, 173, 217, 1) 100%);
     color: white;
 }
 
 .JxC {
-    background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(234,244,4,1) 25%, rgba(233,242,17,1) 100%);
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(234, 244, 4, 1) 25%, rgba(233, 242, 17, 1) 100%);
     color: #f00c85;
 }
 
 .LLA {
-    background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(189,17,236,1) 50%, rgba(131,2,166,1) 100%);
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(189, 17, 236, 1) 50%, rgba(131, 2, 166, 1) 100%);
     color: #ffffff;
 }
 
 .FIT {
-    background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(244,4,37,1) 25%, rgba(208,3,31,1) 100%);
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(244, 4, 37, 1) 25%, rgba(208, 3, 31, 1) 100%);
     color: #ffffff;
 }
 
 .HxNP {
-    background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 20%, rgba(6,3,208,1) 100%);
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 20%, rgba(6, 3, 208, 1) 100%);
     color: #ffffff;
 }
 
 h4 {
     margin: 0;
-    width: 180px;
+    width: 50%;
     font-size: 30px;
     font-family: 'Montserrat', sans-serif;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
@@ -170,25 +168,26 @@ h3 {
 }
 
 footer {
-    margin-top: 10px;   
+    margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #783C90;
     color: white;
-    height: 150px;  
+    height: 150px;
 }
 
 #logoFuente {
-    float: left; 
-    height: 75%; 
+    float: left;
+    height: 75%;
     width: auto;
 }
 
 .franjaVerde {
     margin: auto;
+    margin-bottom: 2.5rem;
     background-color: #8ef82b;
-    width: 50%;
+    width: 20%;
     height: 10px;
 }
 
@@ -196,12 +195,9 @@ footer {
 
 @media (max-width: 768px) {
 
-    header {
-        width: 100% !important;
-    }
-
     header h1 {
-        font-size: 60px; /* Adjust font size for smaller screens */
+        font-size: 60px;
+        /* Adjust font size for smaller screens */
     }
 
     span {
@@ -209,13 +205,40 @@ footer {
     }
 
     .container {
-        grid-template-columns: 1fr; /* Single column layout on small screens */
+        grid-template-columns: 1fr;
+        /* Single column layout on small screens */
+        gap: 2rem;
     }
 
-    .presidente,
-    .gobernador,
-    .intendente {
-        width: 60%;
+    .boxCategory {
+        margin-top: 10px;
+        /* Smaller margin on small screens */
+        margin-bottom: 10px;
+    }
+
+    h4 {
+        font-size: 24px;
+        /* Smaller font size for names */
+    }
+
+    h3 {
+        font-size: 48px;
+    }
+
+    p {
+        font-size: 30px;
+        /* Smaller font size for percentages */
+    }
+
+    .datos1 {
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    header {
+        width: 70vh;
     }
 
     #Milei,
@@ -230,29 +253,16 @@ footer {
     #Wesner,
     #Arouxet,
     #Galli,
-    #Ripoll { 
-        width: 80%;
+    #Ripoll {
+        width: 64vh;
     }
 
-
-    .boxCategory {
-        margin-top: 10px; /* Smaller margin on small screens */
-        margin-bottom: 10px;
+    section {
+        width: 70vh;
     }
 
-    h4 {
-        font-size: 24px; /* Smaller font size for names */
+    footer {
+        width: 70vh;
     }
 
-    h3 {
-        font-size: 48px;
-    }
-
-    p {
-        font-size: 30px; /* Smaller font size for percentages */
-    }
-
-    .datos1 {
-        padding-left: 10px;
-    }
 }
