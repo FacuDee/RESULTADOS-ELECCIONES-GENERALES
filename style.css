@@ -108,31 +108,31 @@ div.intendente {
 
 .UxP {
     background: rgb(255, 255, 255);
-    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(0, 212, 255, 1) 25%, rgba(29, 173, 217, 1) 100%);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(0, 212, 255, 1) 75%, rgba(29, 173, 217, 1) 100%);
     color: white;
 }
 
 .JxC {
     background: rgb(255, 255, 255);
-    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(234, 244, 4, 1) 25%, rgba(233, 242, 17, 1) 100%);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(234, 244, 4, 1) 75%, rgba(233, 242, 17, 1) 100%);
     color: #f00c85;
 }
 
 .LLA {
     background: rgb(255, 255, 255);
-    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(189, 17, 236, 1) 50%, rgba(131, 2, 166, 1) 100%);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(189, 17, 236, 1) 75%, rgba(131, 2, 166, 1) 100%);
     color: #ffffff;
 }
 
 .FIT {
     background: rgb(255, 255, 255);
-    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(244, 4, 37, 1) 25%, rgba(208, 3, 31, 1) 100%);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(244, 4, 37, 1) 75%, rgba(208, 3, 31, 1) 100%);
     color: #ffffff;
 }
 
 .HxNP {
-    background: rgb(255, 255, 255);
-    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 20%, rgba(6, 3, 208, 1) 100%);
+    background: rgb(245,248,250);
+    background: linear-gradient(105deg, rgba(245,248,250,1) 0%, rgba(21,10,236,1) 75%, rgba(6,4,200,1) 100%);
     color: #ffffff;
 }
 
